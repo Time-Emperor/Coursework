@@ -1,0 +1,25 @@
+.head{
+    text-align: center;
+}
+.product-link {
+    background-color: green;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product-link img {
+    width: 70px;
+    height: 70px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover {
+    opacity: 0.6;
+}
