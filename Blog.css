@@ -292,12 +292,3 @@ body{
     display: block;
     margin-bottom: 10px;
 }
-@media(max-width:768px){
-    .head h1{
-        font-size: 2rem;
-    }
-    .main-content{
-        padding: 30px 20px;
-        margin: -30px 15px 30px;
-    }
-}
