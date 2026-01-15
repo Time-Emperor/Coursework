@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Navigation  */
+.product-link {
+   margin: 0 auto;
+    width: 100%;
+    border-collapse: collapse;
+    max-width: 1200px;
+    padding: 15px 20px;
+}
+.product-link td{
+    text-align: center;
+    padding: 15px 10px;
+}
+.product-link img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.product-link img:hover{
+    transform: scale(1.1) rotate(5deg);
+}
+.product-link a{
+    text-decoration: none;
+    color: #667eea;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 5px 10px;
+}
+.product-link a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: #667eea;
+    transition: width 0.3s ease;
+}
+.product-link a:hover::after{
+    width: 80%;
+}
+.product-link a:hover{
+    color: #764ba2;
+}
+
+.nav{
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+/* Section Containers */
+section {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #007bff;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+/* Table Styling */
+.research-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.research-table th, .research-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.research-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* List Styling */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Conclusion specific styling */
+.conclusion {
+    border-left: 5px solid #28a745;
+    background-color: #f0fff4;
+}
+
+/* Placeholder for Screenshot */
+.screenshot div {
+    height: 200px;
+    background: #eee;
+    border: 2px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.screenshot div::after {
+    content: "Image Placeholder";
+    color: #888;
+}
